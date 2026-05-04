@@ -30,7 +30,12 @@
  71_加工例
 ------------------------------*/
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .card-custom-size {
+        width: 387px !important;
+        
+    }
+}
 
 
 /*------------------------------
