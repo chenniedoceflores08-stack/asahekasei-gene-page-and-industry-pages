@@ -5,7 +5,8 @@
  65_冷蔵・冷凍倉庫向け断熱パネル
 ------------------------------*/
 .cell-padding-23 {
-    padding: 23px !important;
+    padding-top: 23px !important;
+    padding-bottom: 23px !important;
 }
 
 
@@ -33,7 +34,7 @@
 @media screen and (min-width: 992px) {
     .card-custom-size {
         width: 387px !important;
-        
+
     }
 }
 
