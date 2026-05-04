@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* CSS Document */
+/*------------------------------------------------
+
+   common
+
+------------------------------------------------*/
+/*------------------------------------------------
+
+   text-align
+   
+------------------------------------------------*/
+.tx_L {
+  text-align: left !important;
+}
+.tx_C {
+  text-align: center !important;
+}
+.tx_R {
+  text-align: right !important;
+}
+.tx_j {
+  text-align: justify;
+  text-justify: inter-ideograph !important;
+}
+/*------------------------------------------------
+
+   text
+   
+------------------------------------------------*/
+.font_red {
+  color: #DE0012;
+}
+/*------------------------------------------------
+
+   float
+   
+------------------------------------------------*/
+.fl_L {
+  float: left !important;
+}
+.fl_R {
+  float: right !important;
+}
+.fl_n {
+  float: none !important;
+}
+.clear {
+  clear: both !important;
+}
+/*------------------------------------------------
+
+   clearfix
+   
+------------------------------------------------*/
+.cFix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.cFix {
+  min-height: 1px;
+}
+* html .cFix {
+  height: 1px; /*\*/ /*/ height: auto; overflow: hidden; /**/
+}
+/*------------------------------------------------
+
+   display
+   
+------------------------------------------------*/
+.dnone {
+  display: none;
+}
+.dinline {
+  display: inline;
+}
+.dblock {
+  display: block;
+}
+/*------------------------------------------------
+
+   position
+   
+------------------------------------------------*/
+.posi_re {
+  position: relative;
+}
+/*------------------------------------------------
+
+   padding
+   
+------------------------------------------------*/
+.ps-1{
+  padding-left: 1em !important;
+}
+/*------------------------------------------------
+
+   margin
+
+------------------------------------------------*/
+.box01 {
+  margin: 0.625em 0 !important;
+}
+.box02 {
+  margin: 1.25em 0 !important;
+}
+.box03 {
+  margin-top: 0.625em !important;
+}
+.box04 {
+  margin-bottom: 0.625em !important;
+}
+.box05 {
+  margin-top: 1.25em !important;
+}
+.box05a {
+  text-indent: 2rem;
+}
+.box06 {
+  margin-bottom: 1.25em !important;
+}
+.box07 {
+  margin-top: 1.875em !important;
+}
+.box08 {
+  margin-bottom: 1.875em !important;
+}
+.box09 {
+  margin-top: 2.5em !important;
+}
+.box10 {
+  margin-bottom: 3.125em !important;
+}
+/*------------------------------------------------
+
+  背景
+   
+------------------------------------------------*/
+.bg-white{
+  background: #ffffff !important;
+}
+.bg-gray{
+  background: #F2F1F1;
+}
+/*------------------------------------------------
+
+  アイコン
+   
+------------------------------------------------*/
+li.pdf_icon {
+  list-style: none;
+  background: url("../../img/common/parts/pdf.png") no-repeat 0px 6px;
+  background-size: 54px 18px;
+  padding-left: 65px;
+  line-height: 2.0em;
+}
+/*------------------------------------------------
+
+  線
+   
+------------------------------------------------*/
+hr {
+  padding: 3.0em 0 0 0;
+  margin-bottom: 3.5em;
+  border: none;
+  border-bottom: 1px solid #231815;
+}
+.dotted-bottom{
+  border-bottom: 1px dotted #000000!important;
+  padding: 5em 0;
+}
+/*------------------------------------------------
+
+  table
+   
+------------------------------------------------*/
+table {
+  width: 100%;
+  border: none;
+}
+table td {
+  border: none;
+  padding: 10px;
+  background: #FFF;
+}
+table.hyou_none {
+  border: none !important;
+  border-collapse: collapse;
+}
+table.hyou_none td {
+  border: none !important;
+  padding: 0 !important;
+  background: none !important;
+}
+table.hyou_gray {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+table.hyou_gray td {
+  border: 1px solid #cccccc;
+  font-size: 100%;
+}
+table.hyou_blue {
+  border: 1px solid #A9E5FF;
+  border-collapse: collapse;
+}
+table.hyou_blue td {
+  border: 1px solid #A9E5FF;
+  font-size: 100%;
+}
+table.hyou_red {
+  border: 1px solid #CA4976;
+  border-collapse: collapse;
+}
+table.hyou_red td {
+  border: 1px solid #FFC7CF;
+  font-size: 100%;
+  color: #CA4976;
+}
+table.hyou_nv td {
+  border: 1px solid #FFC7CF;
+  font-size: 100%;
+  color: #FFF;
+}
+table.hyou_red td.black {
+  color: #333333;
+}
+table.hyou_yellow {
+  border: 1px solid #feecd3;
+  border-collapse: collapse;
+}
+table.hyou_yellow td {
+  border: 1px solid #F4DDC1;
+  font-size: 100%;
+}
+.hyou_gray_bg {
+  background: #EEEEEE;
+}
+.hyou_blue_bg {
+  background: #e3f5ff;
+}
+.hyou_red_bg {
+  background: #bd291d;
+  color: #FFF;
+}
+.hyou_red02_bg {
+  background: #df525b;
+  color: #FFF;
+}
+.hyou_yellow_bg {
+  background: #fff3e3;
+}
+.hyou_nv_bg {
+  background: #23264f;
+  color: #FFF;
+}
+.hyou_or_bg {
+  background: #e78000;
+  color: #FFF;
+}
+.hyou_pu_bg {
+  background: #7f629c;
+  color: #FFF;
+}
+[v-cloak] {
+  display: none;
+}
+.pdf-icon {
+  vertical-align: text-bottom;
+  margin-right: 8px;
+}
+/*------------------------------------------------
+ 印刷時の表示
+------------------------------------------------*/
+@media print {
+  header{
+    display: none;
+  }
+  a[href]:after {
+    content: "" !important;
+  }
+  abbr[title]:after {
+    content: "" !important;
+  }
+}
+/*------------------------------------------------
+ レスポンシブ　　　max-width:1199px
+------------------------------------------------*/
+@media screen and (max-width:1199px) {}
+/*------------------------------------------------
+ レスポンシブ　　　max-width:991px
+------------------------------------------------*/
+@media screen and (max-width:991px) {}
+/*------------------------------------------------
+ レスポンシブ　　　max-width:767px
+------------------------------------------------*/
+@media screen and (max-width:767px) {}
+/*------------------------------------------------
+ レスポンシブ　　　max-width:480px
+------------------------------------------------*/
+@media screen and (max-width:480px) {}
+
+/* .-CONSTRUCTION_spam */
+.mktoFormRow :has(#Lblspam) {
+    width: 1px;
+    height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+}

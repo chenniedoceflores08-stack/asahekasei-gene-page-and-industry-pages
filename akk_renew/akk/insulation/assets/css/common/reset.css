@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*------------------------------------------------
+
+   Reset
+
+------------------------------------------------*/
+
+/*------------------------------------------------
+
+div,spanのみ min-height:0px;　入れない
+
+除外
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+
+h1,h2,h3,h4,h5,h6, p, blockquote, pre,
+
+a, abbr, acronym, address, cite, code,
+
+del, dfn, em, img, ins, kbd, q, samp,
+
+sub, sup, var,
+
+ol, ul, li, dl, dt, dd,
+
+form, label,
+
+ruby, rt, rb, rp, rtc, rbc {
+
+margin: 0;
+
+padding: 0;
+
+border: 0 none transparent;
+
+font-size: 100%;
+
+font-style: normal;
+
+font-weight: normal;
+
+text-decoration: none;
+
+vertical-align: baseline;
+
+text-align: left;
+
+text-indent: 0px;
+
+outline: 0;
+
+}
+
+html, body, applet, object, iframe,
+
+h1,h2,h3,h4,h5, p, blockquote, pre,
+
+a, abbr, acronym, address, cite, code,
+
+del, dfn, em, ins, kbd, q, samp,
+
+sub, sup, var,
+
+ol, ul, li, dl, dt, dd,
+
+form, label,
+
+ruby, rt, rb, rp, rtc, rbc {min-height:0px;}
+
+
+
+
+
+

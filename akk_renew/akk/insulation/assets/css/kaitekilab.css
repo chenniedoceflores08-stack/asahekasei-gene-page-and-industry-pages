@@ -1,0 +1,746 @@
+/*---------------------------------------------------
+ common
+----------------------------------------------------*/
+.main {
+    min-height: 500px;
+    height: 100%;
+}
+
+a[href^="tel:"] {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.z-index-10 {
+    z-index: 10 !important;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.vertical-rl {
+    writing-mode: vertical-rl;
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.link-hover {
+    position: relative;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.spread-width {
+    max-width: 1366px;
+    width: 100%;
+}
+
+.rounded-shape {
+    border-radius: 50%;
+    aspect-ratio: 100 / 100;
+    max-width: 190px;
+    width: 100%;
+    max-height: 190px;
+    height: 100%;
+}
+
+.rounded-text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rounded-arrow-position {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link-arrow-red::before {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #C60E0F;
+    border-bottom: 1px solid #C60E0F;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.link-arrow-red::after {
+    position: absolute;
+    content: "";
+    background-color: #C60E0F;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+.square-shape {
+    height: 120px;
+}
+
+.fade-target {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+    transform: translateY(32px);
+}
+
+.fade-target.active,
+.fade-sticky-target.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fade-target.opacity-90.active {
+    opacity: 0.9;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.bg-title {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 50svh;
+}
+
+.research-content {
+    height: 250px;
+}
+
+.concept-link-arrow::before {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 8px;
+    height: 8px;
+    top: 55%;
+    right: 0;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.concept-link-arrow::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 10px;
+    height: 1px;
+    top: 55%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.bg-link-concept {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-link-concept::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 50%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bg-concept-design {
+    background-image: url("../../assets/images/kaitekilab/common/img_link_concept_design.jpg");
+}
+
+.bg-concept-construction {
+    background-image: url("../../assets/images/kaitekilab/common/img_link_concept_construction.jpg");
+}
+
+.bg-concept-measurement {
+    background-image: url("../../assets/images/kaitekilab/common/img_link_concept_measurement.jpg");
+}
+
+.scroll-area-img {
+    width: 650px;
+}
+
+@media screen and (max-width: 991px) {
+    .fade-chain-target {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+        transform: translateY(32px);
+    }
+
+    .fade-chain-target.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    a[href^="tel:"] {
+        pointer-events: none;
+    }
+
+    .opacity-90 {
+        opacity: 0.9;
+    }
+
+    .fade-target.delay03s.active {
+        transition-delay: 0.3s;
+    }
+
+    .fade-target.delay06s.active {
+        transition-delay: 0.6s;
+    }
+
+    .fade-target.delay09s.active {
+        transition-delay: 0.9s;
+    }
+
+    .fade-target.delay12s.active {
+        transition-delay: 1.2s;
+    }
+
+    .fade-target.delay15s.active {
+        transition-delay: 1.5s;
+    }
+
+    .fade-target-inner.fade-target .fade-chain-target {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+        transform: translateY(32px);
+    }
+
+    .fade-target-inner.fade-target.active .fade-chain-target {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .fade-target-inner.fade-target.active.fade-chain-target:first-child {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .fade-target-inner.fade-target.active .fade-chain-target:nth-child(2) {
+        transition-delay: 0.3s;
+    }
+
+    .fade-target-inner.fade-target.active .fade-chain-target:nth-child(3) {
+        transition-delay: 0.6s;
+    }
+
+    .fade-target-inner.fade-target.active .fade-chain-target:nth-child(4) {
+        transition-delay: 0.9s;
+    }
+
+    .fade-target-inner.fade-target.active .fade-chain-target:nth-child(5) {
+        transition-delay: 1.2s;
+    }
+
+    .bg-link-concept {
+        background-color: #333;
+    }
+
+    .bg-link-concept::before {
+        display: none;
+    }
+
+    .bg-concept-design {
+        background-image: none;
+    }
+
+    .bg-concept-construction {
+        background-image: none;
+    }
+
+    .bg-concept-measurement {
+        background-image: none;
+    }
+
+    .scroll-area-img {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .insulation-body {
+        position: sticky;
+        top: 24svh;
+    }
+
+    .insulation-height {
+        height: 300vh;
+    }
+
+    .insulation-height-02 {
+        height: 120vh;
+    }
+
+    .insulation-height-03 {
+        height: 120vh;
+    }
+
+    .insulation-body-height {
+        height: 90vh;
+    }
+
+    .insulation-body-height-lg {
+        height: 90vh;
+    }
+
+    .insulation-title-01 {
+        position: sticky;
+        top: 15vh;
+    }
+
+    .insulation-title-02 {
+        position: sticky;
+        top: 15vh;
+    }
+
+    .insulation-title-03 {
+        position: sticky;
+        top: 15vh;
+        padding-bottom: 90vh;
+    }
+
+    .insulation-height-03 {
+        height: 190vh;
+    }
+
+    .fade-sticky-target {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+        transform: translateY(32px);
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .insulation-title-01 {
+        position: sticky;
+        top: 15vh;
+        padding-bottom: 20vh;
+    }
+
+    .insulation-title-02 {
+        position: sticky;
+        top: 15vh;
+        padding-bottom: 20vh;
+    }
+
+    .insulation-title-03 {
+        position: sticky;
+        top: 15vh;
+        padding-bottom: 20vh;
+    }
+
+    .insulation-height-03 {
+        height: 120vh;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .link-hover:hover {
+        opacity: 0.5;
+    }
+
+    .cursor-pointer:hover {
+        cursor: pointer;
+    }
+
+    .link-hover-effect:hover::before {
+        transform: translateX(100%);
+    }
+
+    .link-hover-effect:hover::after {
+        transform: scale(0);
+    }
+}
+
+/*---------------------------------------------------
+ top
+----------------------------------------------------*/
+.top-img-wrapper {
+    aspect-ratio: 1366 / 769;
+    height: 100svh;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.bg-link {
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 390 / 316;
+}
+
+.bg-img-design {
+    background-image: url("../../assets/images/kaitekilab/top/img_link_bg01.jpg");
+}
+
+.bg-img-construction {
+    background-image: url("../../assets/images/kaitekilab/top/img_link_bg02.jpg");
+}
+
+.bg-img-measure {
+    background-image: url("../../assets/images/kaitekilab/top/img_link_bg03.jpg");
+}
+
+.request-button {
+    max-width: 288px;
+    width: 100%;
+}
+
+.top-swiper img {
+    object-position: center;
+}
+
+.top-fv-title-container {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.top-fv-news-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.top-fv-news-arrow::before {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.top-fv-news-arrow::after {
+    position: absolute;
+    content: "";
+    background-color: #222;
+    width: 12px;
+    height: 1px;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+}
+
+.bg-neoma-world {
+    background-image: url("../../assets/images/kaitekilab/top/bg_neoma_world_sp.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+    .top-fv-title-container {
+        left: 10%;
+    }
+
+    .bg-neoma-world {
+        background-image: url("../../assets/images/kaitekilab/top/bg_neoma_world.jpg");
+    }
+
+    .bg-link {
+        aspect-ratio: 455 / 316;
+    }
+
+    .link-flex-grow-1 {
+        flex-grow: 1 !important;
+    }
+}
+
+/*---------------------------------------------------
+ about
+----------------------------------------------------*/
+.bg-about {
+    background-image: url("../../assets/images/kaitekilab/about/bg_about_top_sp.jpg");
+}
+
+.bg-about-activity {
+    background-image: url("../../assets/images/kaitekilab/about/bg_about_activity_sp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.activity-circle {
+    aspect-ratio: 100 / 100;
+    max-width: 266px;
+    width: 100%;
+}
+
+.activity-logo {
+    height: 85px;
+}
+
+.accordion-button {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.accordion-button::before,
+.accordion-button::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #222;
+}
+
+.accordion-button::before {
+    top: 50%;
+    right: 16px;
+    transform: rotate(0deg) !important;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.accordion-button::after {
+    top: 50%;
+    right: 16px;
+    transform: rotate(90deg) !important;
+    transition: 0.3s;
+}
+
+.accordion-button.is-open::before {
+    transform: rotate(45deg) !important;
+    opacity: 0;
+}
+
+.accordion-button.is-open::after {
+    transform: rotate(180deg) !important;
+}
+
+.accordion-body {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 0;
+}
+
+.accordion-body.is-open {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 992px) {
+    .bg-about {
+        background-image: url("../../assets/images/kaitekilab/about/bg_about_top.jpg");
+    }
+
+    .bg-about-activity {
+        background-image: url("../../assets/images/kaitekilab/about/bg_about_activity.jpg");
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .accordion-button:hover {
+        opacity: 0.5;
+    }
+}
+
+/*---------------------------------------------------
+ neoma-world
+----------------------------------------------------*/
+.bg-neoma-world {
+    background-image: url("../../assets/images/kaitekilab/neoma-world/bg_neoma_world_top_sp.jpg");
+    background-position: bottom center;
+}
+
+.bg-concept {
+    position: static;
+    background-image: url("../../assets/images/kaitekilab/neoma-world/bg_neoma_world_concept_sp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .bg-neoma-world {
+        background-image: url("../../assets/images/kaitekilab/neoma-world/bg_neoma_world_top.jpg");
+    }
+
+    .bg-concept {
+        background-image: url("../../assets/images/kaitekilab/neoma-world/bg_neoma_world_concept.jpg");
+        background-size: 100%;
+    }
+}
+
+/*---------------------------------------------------
+ concept design
+----------------------------------------------------*/
+.bg-design {
+    background-image: url("../../assets/images/kaitekilab/concept/design/img_design_fv.jpg");
+    width: 100%;
+    height: auto;
+}
+
+/*---------------------------------------------------
+ concept construction
+----------------------------------------------------*/
+.bg-construction {
+    background-image: url("../../assets/images/kaitekilab/concept/construction/img_construction_fv.jpg");
+    width: 100%;
+    height: auto;
+}
+
+/*---------------------------------------------------
+ concept measurement
+----------------------------------------------------*/
+.bg-measurement {
+    background-image: url("../../assets/images/kaitekilab/concept/measurement/img_measurement_fv.jpg");
+    width: 100%;
+    height: auto;
+}
+
+.scroll-graph-img {
+    width: 750px;
+}
+
+.graph-class-width {
+    width: 90%;
+}
+
+.measurement-link-arrow::before {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    top: calc(68% + 1px);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.measurement-link-arrow::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 1px;
+    height: 12px;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 992px) {
+    .scroll-graph-img {
+        width: 100%;
+    }
+}
+
+/*---------------------------------------------------
+ house-of-neoma
+----------------------------------------------------*/
+
+.bg-neoma-home-height {
+    min-height: 875px;
+}
+
+.bg-important {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 711px;
+}
+
+.model-width iframe {
+    max-width: 350px;
+    width: 100%;
+    height: 250px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .bg-neoma-home-height {
+        min-height: 715px;
+    }
+
+    .bg-important {
+        min-height: 483px;
+    }
+
+    .model-width iframe {
+        max-width: 800px;
+        width: 100%;
+        height: 600px;
+    }
+}
+
+/*---------------------------------------------------
+ news-article
+----------------------------------------------------*/
+.news-height {
+    min-height: 60svh;
+}
+
+.news-article-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+    .news-article-img {
+        max-height: 600px;
+    }
+}
+
+/*---------------------------------------------------
+ request
+----------------------------------------------------*/
+.request-link-arrow::after {
+    position: absolute;
+    content: "";
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%) rotate(-45deg);
+}

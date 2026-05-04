@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id": "1",
+        "tag":"産業",
+        "title": "自動車向け<br>パンフレットリリース",
+        "text": "熱マネジメント、軽量化の課題解決のアイデアのご提案にパンフレットを作成しました。",
+        "link": "/akk/insulation/industry/column/car.html",
+        "image": "/akk/insulation/assets/img/column/column-01.png"
+    },
+    {
+        "id": "2",
+        "tag":"産業",
+        "title": "プレハブ向け<br>パンフレットリリース",
+        "text": "不燃要求、快適性要求に対応しています。プレハブ用途事例を紹介したパンフレットを作成しました。",
+        "link": "/akk/insulation/industry/column/prefab.html",
+        "image": "/akk/insulation/assets/img/column/column-02.png"
+    },
+    {
+        "id": "3",
+        "tag":"産業",
+        "title": "フードテック2020に<br>出展しました",
+        "text": "食品工場への幅広い貢献のため、展示会フードテックジャパンに出展しました。",
+        "link": "/akk/insulation/industry/column/foodtech2020.html",
+        "image": "/akk/insulation/assets/img/column/column-03.png"
+    }
+]

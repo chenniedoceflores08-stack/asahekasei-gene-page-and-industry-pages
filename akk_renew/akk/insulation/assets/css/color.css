@@ -1,0 +1,158 @@
+/*---------------------------------------------------
+共通カラーここから
+----------------------------------------------------*/
+:root {
+    --color-main-red: #D22615;
+    --color-main-blue: #355294;
+    --color-main-green: #359573;
+    --color-light-gray: #8C8C8C;
+    --color-main-black: #333333;
+    --color-light-blue: #86B6DC;
+    --color-deep-red: #B3382D;
+    --color-sky-blue: #0497DA;
+}
+
+.bg-main-red{
+    background-color: var(--color-main-red)!important;
+}
+
+.text-main-red{
+    color: var(--color-main-red)!important;
+}
+
+.border-main-red{
+    border-color: var(--color-main-red)!important;
+}
+
+.bg-main-blue{
+    background-color: var(--color-main-blue)!important;
+}
+
+.text-main-blue{
+    color: var(--color-main-blue)!important;
+}
+
+.bg-main-green{
+    background-color: var(--color-main-green)!important;
+}
+
+.text-main-green{
+    color: var(--color-main-green)!important;
+}
+
+.text-light-gray{
+    color: var(--color-light-gray)!important;
+}
+
+.border-light-gray{
+    border-color: var(--color-light-gray)!important;
+}
+
+.bg-main-black{
+    background-color: var(--color-main-black)!important;
+}
+
+.text-light-blue{
+    color: var(--color-light-blue)!important;
+}
+
+.bg-deep-red{
+    background-color: var(--color-deep-red)!important;
+}
+
+.text-deep-red{
+    color: var(--color-deep-red)!important;
+}
+
+.bg-sky-blue{
+    background-color: var(--color-sky-blue)!important;
+}
+
+.bg-light-gray-f9 {
+    background-color: #F9F9F9 !important;
+}
+
+.bg-light-gray-f6 {
+    background-color: #F6F6F6 !important;
+}
+
+.bg-light-gray-f5 {
+    background-color: #F5F5F5 !important;
+}
+
+.bg-light-gray-e9 {
+    background-color: #E9E9E9;
+}
+
+/* kaitekilab */
+.main-color {
+    color: #D22615 !important;
+}
+
+.housing-color {
+    color: #D22615 !important;
+}
+
+.non-residensial-color {
+    color: #005BAC !important;
+}
+
+.bg-gray {
+    background-color: #EFF0F0 !important;
+}
+
+.bg-gray-2 {
+    background-color: #EFEFEF !important;
+}
+
+.bg-main-color {
+    background: #D22615;
+}
+
+.bg-sub-gray-color {
+    background: #F0F0F0;
+}
+
+.bg-lightgray {
+    background-color: #F7F7F7 !important;
+}
+
+.bg-red {
+    background-color: #C60E0F !important;
+}
+
+.bg-red-2 {
+    background-color: #DB4244 !important;
+}
+
+.bg-blue {
+    background-color: #005BAC !important;
+}
+
+.bg-emerald-green {
+    background-color: #89ADB1 !important;
+}
+
+.color-red {
+    color: #DB4244 !important;
+}
+
+.color-blue {
+    color: #005BAC !important;
+}
+
+.color-lightblue {
+    color: #317B96 !important;
+}
+
+.border-black {
+    --bs-border-color: var(--bs-emphasis-color) !important;
+}
+
+.border-dark {
+    --bs-border-color: var(--color_dark) !important;
+}
+
+.border-red {
+    border: 3px solid #DB4244;
+}

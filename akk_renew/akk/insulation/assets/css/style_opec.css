@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+
+/*------------------------------
+ 65_冷蔵・冷凍倉庫向け断熱パネル
+------------------------------*/
+
+@media screen and (min-width: 992px) {}
+
+
+/*------------------------------
+ 69_保冷ボックス・保冷車
+------------------------------*/
+
+@media screen and (min-width: 992px) {}
+
+
+/*------------------------------
+ 70_自動車
+------------------------------*/
+
+@media screen and (min-width: 992px) {}
+
+
+/*------------------------------
+ 71_加工例
+------------------------------*/
+
+@media screen and (min-width: 992px) {}
+
+
+/*------------------------------
+  産業資材共通
+------------------------------*/
+
+.industry-lower-fv{
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.other-industry-swiper-area {
+    position: relative;
+}
+
+.other-industry-swiper {
+    overflow: hidden;
+}
+
+.other-industry-swiper .swiper-wrapper {
+    align-items: flex-start;
+}
+
+.other-industry-swiper .swiper-slide {
+    width: 80%;
+    max-width: 335px;
+    flex-shrink: 0;
+}
+
+.other-industry-slide-thumb img {
+    aspect-ratio: 335 / 225;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 335px;
+}
+
+/* 矢印 */
+.other-industry-swiper-prev,
+.other-industry-swiper-next {
+    position: absolute;
+    top: calc(50% - 38.5px) !important;
+    width: 22px;
+    height: 46px;
+    margin: 0!important;
+    transform: translateY(-50%);
+    z-index: 5;
+    color: transparent;
+}
+
+.other-industry-swiper-prev {
+    left: -8px!important;
+    right: auto;
+}
+
+.other-industry-swiper-next {
+    right: -8px!important;
+    left: auto;
+}
+
+.other-industry-swiper-prev::after,
+.other-industry-swiper-next::after {
+    display: none;
+}
+
+.other-industry-swiper-prev::before,
+.other-industry-swiper-next::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.other-industry-swiper-prev::before {
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 24px solid var(--color-main-red);
+}
+
+.other-industry-swiper-next::before {
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 24px solid var(--color-main-red);
+}
+
+.other-industry-swiper-prev.swiper-button-disabled,
+.other-industry-swiper-next.swiper-button-disabled {
+    opacity: 0.3;
+}
+
+/* ページネーション */
+.other-industry-swiper-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-industry-swiper-pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: auto !important;
+}
+
+.other-industry-swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    border-radius: 50%;
+    opacity: 1;
+    background: transparent;
+    border: 0.5px solid #000;
+    box-sizing: border-box;
+}
+
+.other-industry-swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--color-main-red);
+    border: none;
+}
+
+/* タブレット */
+@media (min-width: 768px) {
+    .other-industry-swiper .swiper-slide {
+        width: 335px;
+    }
+
+    .other-industry-swiper-prev {
+        left: -63px!important;
+        right: auto;
+    }
+
+    .other-industry-swiper-next {
+        right: -63px!important;
+        left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .industry-lower-fv{
+        height: 775px;
+    }
+}
+
+/* PC */
+@media (min-width: 1200px) {
+    .other-industry-swiper .swiper-slide {
+        width: min(335px, calc((100% - 96px) / 3));
+    }
+
+    .other-industry-swiper-prev,
+    .other-industry-swiper-next {
+        top: 90px;
+        width: 27px;
+        height: 54px;
+    }
+}
+
+
+/*------------------------------
+  89_ドア
+------------------------------*/
+
+.fire-door-certification figure{
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    max-width: 224px;
+}
+
+/* Custom Table Styling */
+.spec-table {
+    border-collapse: collapse;
+    min-width: 846px;
+    /* Ensures table doesn't get too squished */
+}
+
+.spec-table th,
+.spec-table td {
+    border: 1px solid #444 !important;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 2px;
+}
+
+/* Header Colors */
+.bg-gray-header {
+    background-color: #f2f2f2 !important;
+    font-weight: bold;
+    padding-left: 40px!important;
+    padding-right: 40px!important;
+}
+
+.bg-red-header {
+    background-color: #c92a1e !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.bg-side-label {
+    background-color: #f9f9f9;
+}
+
+/* Diagonal Line Cell */
+.diagonal-cell {
+    background: linear-gradient(to top right, #f2f2f2 calc(50% - 1px), #444, #f2f2f2 calc(50% + 1px));
+    padding: 0;
+    width: 180px;
+}
+
+/* Specific Text Styling */
+.text-red-bold {
+    color: #c92a1e;
+    font-weight: bold;
+}
+
+.small-note {
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Mobile Scroll Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fire-door-certification {
+    gap: 0 15px !important;
+}
+
+
+@media screen and (min-width: 992px) {
+    .fire-door-certification {
+        gap: 72px !important;
+    }
+}
+
+
+/*------------------------------
+ 90_電気製品
+------------------------------*/
+
+.intro_image-gallery img {
+    max-width: 406px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+}
+
+@media screen and (min-width: 992px) {}
+
+/*------------------------------
+ 92_断熱パネル  97_鉄道／航空
+------------------------------*/
+.section-title {
+    border-bottom: 1px solid #222222;
+}
+
+.external-site-link {
+    color: #222222;
+    border-bottom: 1px solid #222;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+
+.external-icon {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (min-width: 992px) {}
+
+/*------------------------------
+ 93_超低温  95_プレハブ
+------------------------------*/
+
+.low-temp-square::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #222;
+    flex-shrink: 0;
+    transform: translateY(6px);
+}
+@media screen and (min-width: 992px) {
+    .scrollable-mobile-img {
+        min-width: auto;
+    }
+
+    .formula-box {
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
+    .table-responsive>.table {
+        margin-right: 2px;
+    }
+
+    .custom-border-right {
+        border-right: 1px solid black !important;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .scrollable-mobile-img {
+        min-width: 600px;
+    }
+}
+
+/*------------------------------
+ 94_プラント向け
+------------------------------*/
+.product-title {
+    letter-spacing: 0.3em;
+    font-weight: 500;
+}
+
+.sub-header {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.divider {
+    border-top: 1px solid #333;
+    margin-top: 0.5rem;
+}
+
+.case-study-title::before {
+    content: "■";
+}
+
+@media screen and (min-width: 992px) {}
+
+/*------------------------------
+ 96_ネオマフォームによる工場プラント向け省エネ化のご提案
+------------------------------*/
+
+.energy-consumption-container img {
+    max-height: 800px;
+}
+
+@media screen and (min-width: 1200px) {
+    .insultation-image-container {
+        max-width: calc(100% / 3);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .insulation-gallery{
+        --bs-gutter-x: 63px;
+    }
+}

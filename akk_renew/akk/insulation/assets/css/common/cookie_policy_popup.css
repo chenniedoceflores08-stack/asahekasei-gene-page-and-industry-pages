@@ -1,0 +1,128 @@
+#box-cookie-01 {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    background: rgba(0, 91, 172, 0.9);
+    bottom: -100%;
+    color: #ffffff;
+    left: 0;
+    padding: 15px 20px 30px 20px;
+    position: fixed;
+    transition: .7s bottom;
+    width: 100%;
+    z-index: 9999;
+}
+#box-cookie-01 .box-inner {
+    display: flex;
+}
+#box-cookie-01 #cookie-close-01 {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 20px;
+}
+#box-cookie-01 .box-inner #cookie-btn-01 span {
+    color: #333333;
+    display: inline-block;
+    font-size: .8rem;
+    line-height: 2;
+    /* padding-left: 15px; */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+#box-cookie-01 .container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+#box-cookie-01 .box-inner .area-01 {
+    padding-right: 50px;
+}
+.area-01 a{
+    color:white;
+    border-bottom: 1px solid white;
+}
+#box-cookie-01 #cookie-close-01 span {
+    display: block;
+    position: absolute;
+    right: -999em;
+    top: -999em;
+}
+#box-cookie-01 #cookie-close-01::after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: -1px;
+    top: 9px;
+    transform: rotate(
+            -45deg
+    );
+    width: 22px;
+}
+#box-cookie-01 #cookie-close-01::before {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: -1px;
+    position: absolute;
+    top: 9px;
+    transform: rotate(
+            45deg
+    );
+    width: 22px;
+}
+#box-cookie-01 .box-inner #cookie-btn-01 {
+    background: #ffffff;
+    border: #aaaaaa 1px solid;
+    border-radius: 50px;
+    display: block;
+    min-width: 200px;
+    padding: 7px 30px 6px 30px;
+    transition: .2s all;
+    height: 60%;
+    align-self: center;
+}
+#box-cookie-01 .btn-close::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+    #box-cookie-01 .box-inner {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    #box-cookie-01 .box-inner #cookie-btn-01 {
+        background: #ffffff;
+        /* border: #aaaaaa 1px solid; */
+        /* border-radius: 50px; */
+        display: block;
+        padding: 7px 30px 6px 30px;
+        transition: .2s all;
+        margin-top: 15px;
+        min-width: auto;
+        width: 100%;
+    }
+    #box-cookie-01 .box-inner .area-01 {
+        font-size: 1.4rem;
+        padding-right: 50px;
+        line-height: 1.75;
+        margin-top: 10px;
+    }
+    .area-01 p{
+        font-size: .8rem;
+    }
+}
