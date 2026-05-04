@@ -4,6 +4,10 @@
 /*------------------------------
  65_冷蔵・冷凍倉庫向け断熱パネル
 ------------------------------*/
+.cell-padding-23 {
+    padding: 23px !important;
+}
+
 
 @media screen and (min-width: 992px) {}
 
@@ -33,7 +37,7 @@
   産業資材共通
 ------------------------------*/
 
-.industry-lower-fv{
+.industry-lower-fv {
     height: 360px;
     object-fit: cover;
     object-position: center;
@@ -72,19 +76,19 @@
     top: calc(50% - 38.5px) !important;
     width: 22px;
     height: 46px;
-    margin: 0!important;
+    margin: 0 !important;
     transform: translateY(-50%);
     z-index: 5;
     color: transparent;
 }
 
 .other-industry-swiper-prev {
-    left: -8px!important;
+    left: -8px !important;
     right: auto;
 }
 
 .other-industry-swiper-next {
-    right: -8px!important;
+    right: -8px !important;
     left: auto;
 }
 
@@ -157,18 +161,18 @@
     }
 
     .other-industry-swiper-prev {
-        left: -63px!important;
+        left: -63px !important;
         right: auto;
     }
 
     .other-industry-swiper-next {
-        right: -63px!important;
+        right: -63px !important;
         left: auto;
     }
 }
 
 @media (min-width: 992px) {
-    .industry-lower-fv{
+    .industry-lower-fv {
         height: 775px;
     }
 }
@@ -192,7 +196,7 @@
   89_ドア
 ------------------------------*/
 
-.fire-door-certification figure{
+.fire-door-certification figure {
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
     max-width: 224px;
@@ -217,8 +221,8 @@
 .bg-gray-header {
     background-color: #f2f2f2 !important;
     font-weight: bold;
-    padding-left: 40px!important;
-    padding-right: 40px!important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
 }
 
 .bg-red-header {
@@ -309,7 +313,7 @@
  93_超低温  95_プレハブ
 ------------------------------*/
 
-.low-temp-square::before{
+.low-temp-square::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -317,6 +321,7 @@
     flex-shrink: 0;
     transform: translateY(6px);
 }
+
 @media screen and (min-width: 992px) {
     .scrollable-mobile-img {
         min-width: auto;
@@ -383,7 +388,7 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .insulation-gallery{
+    .insulation-gallery {
         --bs-gutter-x: 63px;
     }
 }
